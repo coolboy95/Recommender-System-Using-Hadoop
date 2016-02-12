@@ -30,10 +30,10 @@ Our first try on making **People you might know** feature of facebook on Apache 
 **Note** - I have created 2 Mappers and Reducers and we run 2 jobs and the output of the first job becomes the input of the next job.
 
 The Input file and the First Job Running:
-![](https://raw.githubusercontent.com/LakshayNagpal/Recommender-Hadoop/master/images/1.png)
+![](https://raw.githubusercontent.com/coolboy95/Recommender-System-Using-Hadoop/master/images/1.png)
 
 so the Output of the first Reducer is this:
-![](https://raw.githubusercontent.com/LakshayNagpal/Recommender-Hadoop/master/images/2.png)
+![](https://raw.githubusercontent.com/coolboy95/Recommender-System-Using-Hadoop/master/images/2.png)
 
 This output becomes the input to the Second Mapper
 
@@ -43,11 +43,11 @@ Now running the second MapReduce job by writing the command
 ** hadoop jar Recommender.jar RecommenderDriver1 out14/p* out15**
 
 Note that the jar file name is *Recommender*and the name of the driver class of the second MapReduce job is *RecommenderDriver1*.
-![](https://raw.githubusercontent.com/LakshayNagpal/Recommender-Hadoop/master/images/3.png)
+![](https://raw.githubusercontent.com/coolboy95/Recommender-System-Using-Hadoop/master/images/3.png)
 
 
 ##Output of the Job
 
 The Output of the Recommender System suggest us the list of friends with whom I am not a friend and can be friend with. The list of friends are sorted in the order with the highest number of mutual friends between the two friends to the lowest.
 
-![](https://raw.githubusercontent.com/LakshayNagpal/Recommender-Hadoop/master/images/4.png)
+![](https://raw.githubusercontent.com/coolboy95/Recommender-System-Using-Hadoop/master/images/4.png)
